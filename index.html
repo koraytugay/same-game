@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SameGame</title>
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+<div id="header">SameGame</div>
+<main>
+  <div id="score-card">
+    <div id="game-over" class="score-card-inner">Game Over!</div>
+    <div id="total-score" class="score-card-inner"></div>
+    <div id="new-game" class="score-card-inner">
+      <a id="new-game-link" href="#">New Game</a>
+    </div>
+  </div>
+  <div id="game-board-container"></div>
+  <div id="scores">
+    <div>
+      <span id="selection-points"></span>
+    </div>
+    <div>
+      <span id="total-points"></span>
+    </div>
+  </div>
+</main>
+<script type="module" src="src/index.js"></script>
+</body>
+</html>

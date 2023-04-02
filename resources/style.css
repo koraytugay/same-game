@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#header {
+  background-color: #5eb95e;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#game-board-container {
+  font-size: 0;
+}
+
+.gameTile {
+  height: 40px;
+  width: 40px;
+  border: 0;
+}
+
+.gameTileDisabled {
+  background-color: white;
+}
+
+.gameTile-blue {
+  background-color: #0c89dc;
+}
+
+.gameTile-red {
+  background-color: #dd514c;
+}
+
+.gameTile-yellow {
+  background-color: #cab91a;
+}
+
+.gameTile-purple {
+  background-color: #9c27b0;
+}
+
+.gameTile-green {
+  background-color: #5eb95e;
+}
+
+.marked {
+  opacity: 0.5;
+}
+
+#scores {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+#score-card {
+  display: none;
+  width: 200px;
+  height: 210px;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 90px;
+  box-shadow: 10px 10px 10px black;
+  text-align: center;
+}
+
+.score-card-inner {
+  height: 70px;
+}
+
+#game-over {
+  padding-top: 50px;
+}
+
+#total-score {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#new-game {
+  margin-top: -10px;
+}
+
+a {
+  text-decoration: none;
+  color: #0c89dc;
+  font-weight: normal;
+}
