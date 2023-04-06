@@ -12,7 +12,7 @@ const scoreCard = document.querySelector("#score-card");
 const totalScoreDiv = document.querySelector("#total-score");
 
 newGameLink.addEventListener("click", () => {
-  game = newSameGame();
+  game = newSameGame(game);
   drawBoard();
 });
 

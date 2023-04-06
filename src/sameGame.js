@@ -1,18 +1,21 @@
 import {ROW_COUNT, COL_COUNT} from "./constants.js";
 import {randomColor} from "./utils.js";
 
-function newSameGame() {
-  const board = [];
+function newSameGame(game) {
+
+  const board = game == null ? [] : game.board;
 
   for (let i = 0; i < ROW_COUNT; i++) {
-    let row = [];
+    let row = board[i] == null ? new Array(COL_COUNT).fill(null) : board[i];
     for (let j = 0; j < COL_COUNT; j++) {
-      row.push({
-        isClicked: false,
-        color: randomColor(),
-      });
+      if (row[j] == null) {
+        row[j] = {
+          isClicked: false,
+          color: randomColor(),
+        };
+      }
     }
-    board.push(row);
+    board[i] = row;
   }
 
   return {
